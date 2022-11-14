@@ -4,19 +4,13 @@ import './App.css';
 
 function App() {
 
-//let name = "eggRollMaster";
-//let [name, setName] = useState('egg');
-//let num = 1;
 let [num, setNum] = useState(1);
-
-
-setTimeout(()=> {setNum(num = num+1)},1000);
 
   return (
     <div className="App">
       <header className="App-header">
-        <div>{ num }</div>
-        {<button onClick = {() => {setNum(num += 1)}}>버튼</button> }
+        <div style={{color : "red"}}>{ num }</div>
+        <div className="number">{ num }</div>
       </header>
     </div>
   );
